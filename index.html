@@ -4,10 +4,10 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js – The HTML Presentation Framework</title>
+		<title>Technical Documentation and Sphinx</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+		<meta name="description" content="A brief overview of writing technical documentation and how Sphinx can help.">
+		<meta name="author" content="Caroline Simpson">
 
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -41,338 +41,472 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>Reveal.js</h1>
-					<h3>The HTML Presentation Framework</h3>
+					<h1>Sphinx</h1>
+					<h3>What is this documentation you speak of?</h3>
 					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
+						<small>Created by Caroline Simpson / <a href="https://twitter.com/cpsimpson">@cpsimpson</a></small>
 					</p>
 				</section>
-
-				<section>
-					<h2>Hello There</h2>
-					<p>
-						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
-					</p>
-				</section>
-
-				<!-- Example of nested vertical slides -->
 				<section>
 					<section>
-						<h2>Vertical Slides</h2>
-						<p>Slides can be nested inside of each other.</p>
-						<p>Use the <em>Space</em> key to navigate through all slides.</p>
-						<br>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>That's it, time to go back up.</p>
-						<br>
-						<a href="#/2">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
-
-				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slides.com" target="_blank">http://slides.com</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
-
-				<section>
-					<h2>Touch Optimized</h2>
-					<p>
-						Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
-					</p>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
-
-						Write content using inline or external Markdown.
-						Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-
-						```
-						<section data-markdown>
-						  ## Markdown support
-
-						  Write content using inline or external Markdown.
-						  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
-
-				<section>
-					<section id="fragments">
-						<h2>Fragments</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
-
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's different types of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment current-visible">current-visible</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-					</section>
-				</section>
-
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=slide#/transitions">Slide</a> -
-						<a href="?transition=convex#/transitions">Convex</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a>
-					</p>
-				</section>
-
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						reveal.js comes with a few themes built in: <br>
-						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/blood.css'); return false;">Blood</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
-					</p>
-				</section>
-
-				<section>
-					<section data-background="#dddddd">
-						<h2>Slide Backgrounds</h2>
+						<h2>Documentation</h2>
 						<p>
-							Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
+							Some documentation always trumps no documentation
 						</p>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
 					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code class="hljs">&lt;section data-background="image.png"&gt;</code></pre>
+					<section>
+						<h2>Who is it for?</h2>
+						<ul>
+							<li>For your users...</li>
+							<li>For your future-self...</li>
+						</ul>
 					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Tiled Backgrounds</h2>
-						<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
+					<section>
+						<h2>Improve design</h2>
+						<p>Distilling thoughts into coherent words can point out flaws/improvements.</p>
 					</section>
-					<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
-						<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
-							<h2>Video Backgrounds</h2>
-							<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
-						</div>
-					</section>
-					<section data-background="http://i.giphy.com/90F8aUepslB84.gif">
-						<h2>... and GIFs!</h2>
-					</section>
-				</section>
-
-				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						Different background transitions are available via the backgroundTransition option. This one's called "zoom".
-					</p>
-					<pre><code class="hljs">Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
-				</section>
-
-				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						You can override background transitions per-slide.
-					</p>
-					<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
 				</section>
 
 				<section>
-					<h2>Pretty Code</h2>
-					<pre><code class="hljs" data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
+					<section>
+						<h2>Technical Documentation</h2>
+						<ul>
+							<li>
+								<h3>3 main kinds</h3>
+								<ul>
+									<li>Step-by-step Tutorials</li>
+									<li>Topical Guides</li>
+									<li>Reference Materials</li>
+								</ul>
+							</li>
+							<li>
+								<h3>Additional kinds</h3>
+								<ul>
+									<li>FAQ</li>
+									<li>Readme files</li>
+								</ul>
+							</li>
+						</ul>
+					</section>
 
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
-}
-					</code></pre>
-					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
 				</section>
 
 				<section>
-					<h2>Marvelous List</h2>
+					<section>
+						<h2>Tutorials</h2>
+					</section>
+					<section>
+						<h3>Quick</h3>
+						<ul>
+							<li>Success in 30 minutes</li>
+							<li>Highlight when bad decisions are made for brevity</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Easy</h3>
+						<ul>
+							<li>Test in different scenarios </li>
+							<li>Guarantee success for the user</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Not too easy</h3>
+						<ul>
+							<li>Ensure that users that won't succeed with your project don't breeze through the tutorial</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Reflect the project feel</h3>
+						<ul>
+							<li>Demonstrate a wide cross-cut of features in the tutorial</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Topical Guides</h2>
+					</section>
+					<section>
+						<h3>Deep dive into an area of functionality</h3>
+						<ul>
+							<li>Doesn't need to have every detail</li>
+							<li>Provides the "why"</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Comprehensive</h3>
+						<ul>
+							<li>User comfortable with the topic after a close read</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Skipped by a lot of projects</h3>
+						<ul>
+							<li>Rely on books</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Reference Materials</h2>
+					</section>
+					<section>
+						<h3>Fully document public APIs</h3>
+						<p>Don't just rely on autodocs</p>
+					</section>
+					<section>
+						<h3>Describe the parameters and their behavioural influence</h3>
+					</section>
+					<section>
+						<h3>Provides the "how"</h3>
+					</section>
+				</section>
+				<section>
+					<h2>Frequently Asked Questions</h2>
 					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
+						<li>Better if you can fix the cause of the question</li>
+						<li>Important to keep them up-to-date</li>
 					</ul>
 				</section>
-
 				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
-
-				<section>
-					<h2>Tabular Tables</h2>
-					<table>
-						<thead>
-							<tr>
-								<th>Item</th>
-								<th>Value</th>
-								<th>Quantity</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Apples</td>
-								<td>$1</td>
-								<td>7</td>
-							</tr>
-							<tr>
-								<td>Lemonade</td>
-								<td>$2</td>
-								<td>18</td>
-							</tr>
-							<tr>
-								<td>Bread</td>
-								<td>$3</td>
-								<td>2</td>
-							</tr>
-						</tbody>
-					</table>
-				</section>
-
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
-
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Speaker View</h2>
-					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
-					<p>Press the <em>S</em> key to try it out.</p>
-
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
-
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here's an example:</p>
-					<iframe src="https://www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-				</section>
-
-				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the page background.
-					</p>
-				</section>
-
-				<section data-state="customevent">
-					<h2>State Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
-
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
-					</p>
-				</section>
-
-				<section>
-					<h2>Much more</h2>
+					<h2>Readme Files</h2>
 					<ul>
-						<li>Right-to-left support</li>
-						<li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
+						<li>Often first introduction to a project</li>
+						<li>Important for projects stored in public repositories</li>
+						<li>Capture important details</li>
+						<li>Provide links to more information</li>
 					</ul>
 				</section>
+				<section>
+					<section>
+						<h2>Structure</h2>
+						<p>Have some</p>
+					</section>
+					<section>
+						<ul>
+							<li>Define the structure of your documenation up front</li>
+							<li>Organic structure hard to follow</li>
+						</ul>
+					</section>
+					<section>
+						<ul>
+							<li>Adjust as needed</li>
+							<li>Do so knowingly/thoughtfully</li>
+						</ul>
+					</section>
+				</section>
 
-				<section style="text-align: left;">
-					<h1>THE END</h1>
-					<p>
-						- <a href="http://slides.com">Try the online editor</a> <br>
-						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
+				<section>
+					<h2>Timely Updates</h2>
+					<p>Update your documentation when the code changes</p>
+				</section>
+				<section>
+					<section>
+						<h2>Writing Good Docs</h2>
+						<p>Write more</p>
+					</section>
+					<section>
+						<ul>
+							<li>Have an editor</li>
+							<li>Write more</li>
+						</ul>
+					</section>
+					<section>
+						<ul>
+							<li>Read more</li>
+							<li>Analyze what you are reading for effectiveness</li>
+							<li>Write more</li>
+						</ul>
+					</section>
+					<section>
+						<ul>
+							<li>Follow a style-guide, even if loosely</li>
+							<li>Be consistent in your style</li>
+							<li>Write more</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Style</h2>
+					</section>
+					<section>
+						<h3>Be conversational</h3>
+						<ul>
+							<li>Strike a personal tone (Use I and we)</li>
+							<li>Helps readers identify with the material</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Be careful with tense</h3>
+						<ul>
+							<li>Usually second person, future tense</li>
+							<li>"Then, when you've opened the menu, click 'Settings'"</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Be active rather than passive</h3>
+					</section>
+					<section>
+						<h3>Be concise</h3>
+						<p>Omit the fluff</p>
+						<ul>
+							<li>"A good tutorial should show off most of the different areas of the project."</li>
+							<li>"A tutorial should show off the major project areas."</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Print vs Screen</h2>
+						<p>People skim online, read in print</p>
+					</section>
+					<section>
+						<h3>Use markup online</h3>
+						<ul>
+							<li>Break up sections with headers</li>
+							<li>Use structural elements - lists, tables, diagrams</li>
+							<li>Use bold and italics more liberally</li>
+							<li>Shorter paragraphs</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Editing Tips</h2>
+					</section>
+					<section>
+						<h3>Don't edit without permission</h3>
+						<ul>
+							<li>You'll probably sound like a jerk</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Edit on paper if possible</h3>
+					</section>
+					<section>
+						<h3>Have references available</h3>
+						<ul>
+							<li>Style guide</li>
+							<li>Dictionary</li>
+							<li>Thesaurus</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Read slowly</h3>
+						<ul>
+							<li>Try reading out loud</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Make multiple passes</h3>
+					</section>
+					<section>
+						<h3>Be consistent</h3>
+					</section>
+				</section>
+				<section>
+					<h2>Self-Editing Tips</h2>
+					<ul>
+						<li>Separate editing from writing</li>
+						<li>Leave some time between writing and editing</li>
+						<li>Try changing the margins</li>
+						<li>Try changing locations</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Sphinx</h2>
+					<p>Generate beautiful documentation from plain text</p>
+				</section>
+				<section>
+					<p>Focus on hand-crafted documenation, possibly combining with autodocs</p>
+				</section>
+				<section>
+					<h2>History</h2>
+					<ul>
+						<li>Created for Python's documentation</li>
+						<li>Publicly released in 2008</li>
+						<li>Now used by many projects</li>
+					</ul>
+				</section>
+				<section>
+					<section>
+						<h2>Format</h2>
+					</section>
+					<section>
+						<h3>Uses reStructuredText</h3>
+						<h4>plain-text markup</h4>
+						<p>Can be easily stored in source control</p>
+					</section>
+					<section>
+						<h3>Output to Many Formats</h3>
+						<ul>
+							<li>HTML</li>
+							<li>PDF</li>
+							<li>ePub</li>
+							<li>LaTeX</li>
+							<li>man pages</li>
+							<li>...</li>
+						</ul>
+					</section>
+					<section>
+						<h3>docutils</h3>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>reStructuredText</h2>
+						<ul>
+							<li>Markup often makes text ugly, hard to read</li>
+							<li>Readable and simple</li>
+							<li>Powerful enough for non-trivial uses</li>
+							<li>Similar to, but more powerful and extensible than, markdown</li>
+						</ul>
+					</section>
+					<section>
+						<pre>
+A Heading
+=========
+
+This is a paragraph like you would put in your docs.
+
+* And a list
+* with a couple items
+
+						</pre>
+						<pre>
+&lt;h1&gt;A Heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph like you would put in your docs.&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;And a list&lt;/li&gt;
+	&lt;li&gt;with a couple items&lt;/li&gt;
+&lt;/ul&gt;
+						</pre>
+
+					</section>
+					<section>
+						<h1>A Heading</h1>
+						<p>This is a paragraph like you would put in your docs.</p>
+						<ul>
+							<li>And a list</li>
+							<li>with a couple items</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<h2>Cross Referencing</h2>
+					<ul>
+						<li>Semantic markup</li>
+						<li>Links to function and class references, glossary items, etc</li>
+					</ul>
+				</section>
+				<section>
+					<section>
+						<h2>Hierarchial</h2>
+						<p>Adds ability to have multiple files in a hierarchy to docutils</p>
+					</section>
+					<section>
+						<ul>
+							<li>Easily define document tree</li>
+							<li>Automatic links to parents, children, siblings</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<h2>Indices</h2>
+					<ul>
+						<li>Automatically generate indices</li>
+						<li>General, python module</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Search</h2>
+				</section>
+				<section>
+					<h2>Code Blocks</h2>
+					<p>Code highlighting using Pygments</p>
+				</section>
+				<section>
+					<section>
+						<h2>Extensibility</h2>
+					</section>
+					<section>
+						<h3>Built-in extensions</h3>
+						<ul>
+							<li>intersphinx</li>
+							<li>autodoc</li>
+							<li>...</li>
+						</ul>
+						<p><a href="http://www.sphinx-doc.org/en/stable/extensions.html#builtin-sphinx-extensions">http://www.sphinx-doc.org/en/stable/extensions.html#builtin-sphinx-extensions</a></p>
+					</section>
+					<section>
+						<h3>User contributed extensions</h3>
+						<ul>
+							<li>youtube</li>
+							<li>matlabdomain</li>
+							<li>matplotlib</li>
+							<li>...</li>
+						</ul>
+						<p><a href="http://www.sphinx-doc.org/en/stable/develop.html#extensions">http://www.sphinx-doc.org/en/stable/develop.html#extensions</a></p>
+					</section>
+				</section>
+				<section id="fragments">
+					<h2>Uses for Sphinx</h2>
+					<ul>
+						<li class="fragment">Technical Documentation<span class="fragment">, of course</span></li>
+						<li class="fragment">Generating a website or blog</li>
+						<li class="fragment">School assignments</li>
+						<li class="fragment">Your next novel?</li>
+					</ul>
+				</section>
+				<section>
+					<section>
+						<h2>Related Tools</h2>
+					</section>
+					<section>
+						<h3>Read the Docs</h3>
+						<ul>
+							<li>Hosted docs</li>
+							<li>Automates building and uploading docs after every commit</li>
+						</ul>
+						<p><a href="https://readthedocs.org/">https://readthedocs.org/</a></p>
+					</section>
+
+					<section>
+						<h3>Pandoc</h3>
+						<ul>
+							<li>Convert between markup languages</li>
+						</ul>
+						<p><a href="http://pandoc.org/">http://pandoc.org/</a></p>
+					</section>
+					<section>
+						<h3>watchdog</h3>
+						<ul>
+							<li>Shell commands run when file changes</li>
+							<li>Auto-build sphinx documentations as files change</li>
+						</ul>
+						<p><a href="https://pythonhosted.org/watchdog/">https://pythonhosted.org/watchdog/</a></p>
+					</section>
+				</section>
+				<section>
+					<h2>References</h2>
+					<p><a href="http://www.sphinx-doc.org/en/stable/">Sphinx</a> Documentation</p>
+					<p><a href="http://docutils.sourceforge.net/">docutils</a> Documentation</p>
+					<p>Jacob Kaplan-Moss created a
+						<a href="https://jacobian.org/writing/great-documentation/">guide to writing great technical docs</a>
 					</p>
+					<p>Brandon Rhodes created a
+						<a href="https://readthedocs.org/projects/brandons-sphinx-tutorial/">sphinx tutorial</a>
+					</p>
+					<p>Eric Holscher and Troy Howard created
+						<a href="https://readthedocs.org/">Read The Docs</a> and
+						<a href="http://write-the-docs.readthedocs.org/">Write The Docs</a>
+					</p>
+				</section>
+				<section>
+					<h2>The End</h2>
+					<p>Questions?</p>
 				</section>
 
 			</div>
